@@ -1,6 +1,7 @@
 /*
     @Author: Ithan lara 
     @github: https://github.com/ithan/Scriptcraft-Custom-Mods-
+    @Version: Beta 0.1
 
     usage: type /enderArrow in the chat to activate it, you need 1 arrow and 1 ender pearl to make it work.
 */
