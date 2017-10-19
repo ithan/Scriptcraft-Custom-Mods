@@ -1,4 +1,6 @@
 /*// Modules
+//                      WIP! There are a few bugs that need to be solved before release
+
 var items = require('items'),
 utils = require('utils')
 
