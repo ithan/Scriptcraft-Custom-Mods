@@ -1,5 +1,9 @@
-/*// Modules
-//                      WIP! There are a few bugs that need to be solved before release
+/* Modules
+    @Author: ithan lara
+    @Github: https://github.com/ithan/Scriptcraft-Custom-Mods-
+    @Version: Alpha 0.1
+*/                   
+//                  WIP! There are a few bugs that need to be solved before release, drag and drop have some issues
 
 var items = require('items'),
 utils = require('utils')
@@ -256,5 +260,3 @@ events.entityDamage(function(event)
 });
 
 
-        
-        */
