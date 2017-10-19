@@ -1,3 +1,11 @@
+/*
+   @Author: Ithan lara 
+   @Github: https://github.com/ithan/Scriptcraft-Custom-Mods-
+   @version: Alpha 0.1
+   
+   WIP, still need some commands for interaction.
+*/
+
 // Directories 
 var mealsDirectory = 'scriptcraft/meals.json';
 
