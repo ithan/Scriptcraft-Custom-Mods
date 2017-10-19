@@ -63,9 +63,7 @@ exports.enderArrow = function(player){
 // Command handler
 
 events.playerCommandPreprocess(function(event){
-    console.log(event.getMessage());
     if(event.getMessage() == "/enderArrow"){
-        console.log(event.getPlayer().name);
         var result = enderArrow(event.getPlayer().name) ? translation.enderArrowDesactivated : translation.enderArrowActivated;
         echo(event.getPlayer(),result);
         event.setCancelled(true);
