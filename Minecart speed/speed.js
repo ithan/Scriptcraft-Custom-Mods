@@ -10,7 +10,8 @@
 var defaultMaxSpeed = 0.4,
     customMaxSpeed = 2,
     checkDistance = 4,
-    seedMultiplyer = 1.4;
+    seedMultiplyer = 1.4,
+    worldID = 0;
 
 
 events.vehicleMove(function(event){
@@ -22,9 +23,9 @@ events.vehicleMove(function(event){
             var temporalLocationStorage = event.getTo();
         
             if(event.getVehicle().getVelocity().x > 0 || event.getVehicle().getVelocity().x < 0){
-                temporalLocationStorage = server.getWorlds()[0].getBlockAt(temporalLocationStorage.getX() + (Math.floor(event.getVehicle().getVelocity().x) * checkDistance),temporalLocationStorage.y,Math.floor(temporalLocationStorage.z));
+                temporalLocationStorage = server.getWorlds()[worldID].getBlockAt(temporalLocationStorage.getX() + (Math.floor(event.getVehicle().getVelocity().x) * checkDistance),temporalLocationStorage.y,Math.floor(temporalLocationStorage.z));
             } else {
-                temporalLocationStorage = server.getWorlds()[0].getBlockAt(Math.floor(temporalLocationStorage.x),temporalLocationStorage.y,temporalLocationStorage.getZ() + (Math.floor(event.getVehicle().getVelocity().z) * checkDistance));
+                temporalLocationStorage = server.getWorlds()[worldID].getBlockAt(Math.floor(temporalLocationStorage.x),temporalLocationStorage.y,temporalLocationStorage.getZ() + (Math.floor(event.getVehicle().getVelocity().z) * checkDistance));
             }
         
 
