@@ -10,7 +10,7 @@
 var defaultMaxSpeed = 0.4,
     customMaxSpeed = 2,
     checkDistance = 4,
-    seedMultiplyer = 1.4,
+    speedMultiplyer = 1.4,
     worldID = 0;
 
 
@@ -36,7 +36,7 @@ events.vehicleMove(function(event){
             if( blockType == "RAILS" || blockType == "POWERED_RAIL"){
                 event.getVehicle().setMaxSpeed(customMaxSpeed);
                 if(nextLocation.getBlock().type == "POWERED_RAIL"){
-                    event.getVehicle().setVelocity(event.getVehicle().getVelocity().multiply(seedMultiplyer));
+                    event.getVehicle().setVelocity(event.getVehicle().getVelocity().multiply(speedMultiplyer));
                 }
             } else {
                 event.getVehicle().setMaxSpeed(defaultMaxSpeed);
